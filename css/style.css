@@ -1,5 +1,5 @@
 body {
-    background-color: #574e4e
+    background-color: #574e4e;
     font-family: Sans-serif;
     margin: 0;
     padding: 20px;
@@ -46,4 +46,32 @@ aside {
 
 footer {
     background-color:#ff9800;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        ;
+
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .articles-container {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgb(56, 250, 56);
+        padding: 15px;
+        border-raidus: 10px;  
+    }
+    aside {
+        flex: 1;
+        background-color: #0d47a1;
+        padding: 15px;
+        border-radius: 10px;
+    }
 }
